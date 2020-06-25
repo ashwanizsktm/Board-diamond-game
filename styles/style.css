@@ -1,0 +1,66 @@
+* {
+  padding   : 0;
+  margin    : 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.gameboard-wrap{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h1{
+  color: blueviolet;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+p{
+ font-size: 20px;
+ margin-top: 30px;
+}
+
+.gameboard {
+  padding        : 10px;
+  box-shadow     : 0 0 10px grey;
+  width          : 80%;
+  margin         : 10px auto 0 auto;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+}
+
+.square-box {
+  height        : 0;
+  width         : 12%;
+  padding-bottom: 12%;
+  border        : 1px solid #000;
+  margin        : 1px;
+  position      : relative;
+  cursor        : pointer;
+}
+
+.ques-icon {
+  position  : absolute;
+  top       : 50%;
+  left      : 50%;
+  transform : translate(-50%, -50%);
+  width     : 50px;
+  height    : 50px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768.5px) {
+  .square-box {
+    width: 11%;
+  }
+
+  .ques-icon {
+    width : 24px;
+    height: 24px;
+  }
+}
