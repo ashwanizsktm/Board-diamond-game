@@ -44,7 +44,7 @@ p{
   cursor        : pointer;
 }
 
-.ques-icon {
+.ques-icon, .diamond-icon{
   position  : absolute;
   top       : 50%;
   left      : 50%;
@@ -59,7 +59,7 @@ p{
     width: 11%;
   }
 
-  .ques-icon {
+  .ques-icon, .diamond-icon {
     width : 24px;
     height: 24px;
   }
