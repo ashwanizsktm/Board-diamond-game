@@ -8,27 +8,27 @@ body {
   font-family: sans-serif;
 }
 
-.gameboard-wrap{
-  text-align: center;
+.gameboard-wrap {
   text-transform: capitalize;
+  display       : flex;
 }
 
-h1{
-  color: blueviolet;
+.gameboard-heading {
+  color    : blueviolet;
   font-size: 25px;
-  margin-bottom: 25px;
+  margin   : 5px 0 5px 20px;
 }
 
-p{
- font-size: 20px;
- margin-top: 30px;
+p {
+  font-size : 20px;
+  margin-top: 30px;
 }
 
 .gameboard {
   padding        : 10px;
   box-shadow     : 0 0 10px grey;
-  width          : 80%;
-  margin         : 10px auto 0 auto;
+  width          : 580px;
+  margin         : 20px;
   display        : flex;
   flex-wrap      : wrap;
   justify-content: center;
@@ -44,7 +44,8 @@ p{
   cursor        : pointer;
 }
 
-.ques-icon, .diamond-icon{
+.ques-icon,
+.diamond-icon {
   position  : absolute;
   top       : 50%;
   left      : 50%;
@@ -55,12 +56,36 @@ p{
 }
 
 @media only screen and (max-width: 768.5px) {
+  .gameboard-wrap {
+    display: block;
+  }
+
+  .gameboard-heading {
+    text-align: center;
+  }
+  
+  .user-score{
+    text-align: center;
+  }
+  .gameboard {
+    margin: 4px auto;
+    width : 375px;
+  }
+
   .square-box {
     width: 11%;
   }
 
-  .ques-icon, .diamond-icon {
+  .ques-icon,
+  .diamond-icon {
     width : 24px;
     height: 24px;
+  }
+}
+
+@media only screen and (max-width: 425.5px) {
+  .gameboard {
+    margin: 4px auto;
+    width : 350px;
   }
 }
