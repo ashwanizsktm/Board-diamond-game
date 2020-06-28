@@ -15,7 +15,7 @@ body {
 }
 
 .gameboard-heading {
-  color    : blueviolet;
+  color    : blue;
   font-size: 25px;
   margin   : 5px 0 5px 20px;
 }
@@ -33,6 +33,7 @@ p {
   display        : flex;
   flex-wrap      : wrap;
   justify-content: center;
+  list-style     : none;
 }
 
 .square-box {
@@ -67,7 +68,7 @@ p {
 .user-score,
 .counter {
   font-size: 20px;
-  color    : blueviolet;
+  color    : blue;
 }
 
 .common-icon {
@@ -75,11 +76,12 @@ p {
   top       : 50%;
   left      : 50%;
   transform : translate(-50%, -50%);
-  width     : 50px;
-  height    : 50px;
+  width     : 45px;
+  height    : 45px;
   object-fit: cover;
 }
 
+/* Styles for smaller devices */
 @media only screen and (max-width: 768px) {
   .gameboard-wrap {
     display: block;
@@ -92,6 +94,7 @@ p {
   .game-over {
     font-size : 60px;
     top       : 30%;
+    left      : 30%;
     text-align: center;
   }
 
@@ -120,5 +123,9 @@ p {
   .gameboard {
     margin: 4px auto;
     width : 350px;
+  }
+
+  .game-over {
+    left: 17%;
   }
 }
