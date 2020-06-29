@@ -9,5 +9,5 @@
    # (2) Styles:- where style.css are kept,
    # (3) Script:- where app.js file is available in which all the logics are written for this Game App.
 
-# 3. After Cloning the App open in any editor then open with the live server. because few time assets doesn't 
-# get loaded generally. 
+# 3. After Cloning the App open in any editor then open the game app and start playing.
+
